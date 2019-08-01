@@ -7,12 +7,12 @@ define([], function() {
       var match = navigator.userAgent.match(/(\d)_\d like Mac OS/);
       return match && match[1] <= 7;
     })(),
-    URL = window.URL || window.webkitURL,
-    scripts = document.scripts,
-    src = scripts[scripts.length - 1].src;
+    URL = window.URL || window.webkitURL; // ,
+    // scripts = document.scripts,
+    // src = scripts[scripts.length - 1].src;
 
   // 打包 async require path
-  __webpack_public_path__ = src.substr(0, src.lastIndexOf('/') + 1);
+  // __webpack_public_path__ = src.substr(0, src.lastIndexOf('/') + 1);
 
   /**
    * 组件构造器
